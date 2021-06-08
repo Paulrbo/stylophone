@@ -2,7 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-	background: url("https://github.com/Paulrbo/stylophone/blob/ce6fe26f1d82b0c838aa0a697424e15349414ab3/backg4.jpg") rgb(0, 0, 0);
+	background: url("https://paulrbo.github.io/backg4.jpg") rgb(0, 0, 0);
 	background-repeat: no-repeat;
 	margin: 0;
 }
