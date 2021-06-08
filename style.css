@@ -2,7 +2,7 @@ body{
     font-family: 'Cabin', Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-	background: url("https://paulrbo.github.io/backg4.jpg") rgb(0, 0, 0);
+	background: url("pic/backg4.jpg") rgb(0, 0, 0);
 	background-repeat: no-repeat;
 	margin: 0;
 }
