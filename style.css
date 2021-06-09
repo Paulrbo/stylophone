@@ -23,7 +23,6 @@ body{
     overflow: hidden;
     will-change: transform;
     display: flex;
-    background-color: turquoise;
     justify-content: center;
 }
 

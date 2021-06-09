@@ -1,0 +1,40 @@
+.zebi{
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 1300px;
+    border:0;
+    transform: scale(1);
+    overflow:hidden;
+}
+
+body{
+    margin: 0;
+    background: url(../pic/backg4.jpg) black;
+    background-repeat: no-repeat;
+    font-family: 'Cabin', Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: rgba(51, 51, 51, 0.8);
+	box-shadow: inset 0 -5px 10px rgb(0 0 0 / 50%);
+  }
+  
+  .topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: left;
+	padding: 25px 25px;
+	text-decoration: none;
+	font-size: 25px;
+  }
+  
+  .topnav a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  .topnav a.active {
+	background-color: #83BC5D;
+	color: rgb(255, 255, 255);
+  }
