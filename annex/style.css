@@ -7,6 +7,10 @@
     overflow:hidden;
 }
 
+h1{
+    text-align: center;
+}
+
 body{
     margin: 0;
     background: url(../pic/backg4.jpg) black;
