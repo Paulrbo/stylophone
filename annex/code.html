@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    
+
 
     <title>STYLOPHONE</title>
 </head>
@@ -20,36 +20,39 @@
     <div class="topnav">
         <a class="active" href="../index.html">HOME</a>
         <a href="https://a360.co/3v11uwh" target="_blank">Modélisation 3D du capuchon</a>
-        <a href="https://drive.google.com/file/d/1jfJoOxSNL04t3CLtO6CxEY9COL3ChJpE/view?usp=sharing" target="_blank">Plans de découpe de
+        <a href="https://drive.google.com/file/d/1jfJoOxSNL04t3CLtO6CxEY9COL3ChJpE/view?usp=sharing"
+            target="_blank">Plans de découpe de
             la boîte</a>
-        <a href="#">PCB</a>
+        <a href="https://drive.google.com/file/d/1_GWB9heuJoew_WZHE3zowjr4jAPBu-yk/view?usp=sharing"
+            target="_blank">PCB</a>
         <a href="#">Code</a>
         <a href="video.html">Video</a>
     </div>
 
-            <iframe class="zebi"
-                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252Fon%2520cr%25C3%25A9e%2520un%2520tableau%2520avec%2520dedans%2520des%2520valeurs%2520d%25C3%25A9finies%2520qui%2520correspondent%2520aux%2520notes%2520exactes%2520%28do%252C%2520re%252C%2520etc...%29%250A%250Afloat%2520musicNote%255B24%255D%2520%253D%257B32.70%252C34.65%252C36.71%252C38.89%252C41.20%252C43.65%252C46.25%252C49%252C51.91%252C55%252C58.27%252C61.74%252C32.70*2%252C34.65*2%252C36.71*2%252C38.89*2%252C41.20*2%252C43.65*2%252C46.25*2%252C49*2%252C51.91*2%252C55*2%252C58.27*2%252C61.74*2%257D%253B%250A%250A%252F%252Fon%2520d%25C3%25A9finie%2520une%2520variable%2520pour%2520chaque%2520touche%2520et%2520on%2520lui%2520associe%2520une%2520valeur%2520de%2520pin%2520de%2520l%27arduino%250A%2523define%2520bpDo%252023%250A%2523define%2520bpRe%252027%250A%2523define%2520bpMi%252031%250A%2523define%2520bpFa%252033%250A%2523define%2520bpSol%252037%250A%2523define%2520bpLa%252041%250A%2523define%2520bpSi%252045%250A%2523define%2520bpDod%252025%250A%2523define%2520bpRed%252029%250A%2523define%2520bpFad%252035%250A%2523define%2520bpSold%252039%250A%2523define%2520bpLad%252043%250A%2523define%2520bpDo2%252022%250A%2523define%2520bpRe2%252026%250A%2523define%2520bpMi2%252030%250A%2523define%2520bpFa2%252032%250A%2523define%2520bpSol2%252036%250A%2523define%2520bpLa2%252040%250A%2523define%2520bpSi2%252044%250A%2523define%2520bpDod2%252024%250A%2523define%2520bpRed2%252028%250A%2523define%2520bpFad2%252034%250A%2523define%2520bpSold2%252038%250A%2523define%2520bpLad2%252042%250A%2523define%2520buzzer%25204%250A%2520%250A%252F%252F%2520on%2520cr%25C3%25A9e%2520un%2520tableau%2520et%2520on%2520y%2520rentre%2520toutes%2520les%2520valeurs%250A%250Aint%2520bpTab%255B24%255D%253D%257BbpDo%252CbpDod%252CbpRe%252CbpRed%252CbpMi%252CbpFa%252CbpFad%252CbpSol%252CbpSold%252CbpLa%252CbpLad%252CbpSi%252CbpDo2%252CbpDod2%252CbpRe2%252CbpRed2%252CbpMi2%252CbpFa2%252CbpFad2%252CbpSol2%252CbpSold2%252CbpLa2%252CbpLad2%252CbpSi2%257D%253B%250Avoid%2520setup%28%29%250A%257B%250A%2520%2520%252F%252Fpour%2520chacune%2520des%2520valeurs%2520du%2520tableau%2520%28notes%29%2520%25C3%25A7a%2520va%2520appeler%2520la%2520sortie%2520de%2520l%27arduino%2520en%2520question%250A%2520%2520for%28int%2520i%2520%253D%25200%253B%2520i%253C%252024%253B%2520i%252B%252B%29%257B%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520pinMode%28bpTab%255Bi%255D%252C%2520INPUT%29%253B%250A%2520%2520%257D%250A%2520%2520%2520%2520pinMode%28buzzer%252C%2520OUTPUT%29%253B%250A%2520%2520%2520%2520Serial.begin%289600%29%253B%250A%257D%250A%2520%250Avoid%2520loop%28%29%250A%257B%250A%2520%2520%252F%252Fappelle%2520la%2520sortie%2520de%2520l%27arduino%2520si%2520la%2520note%2520est%2520enfonc%25C3%25A9e%2520%28ce%2520qui%2520produira%2520le%2520son%29%250A%2520%2520for%28int%2520i%2520%253D%25200%253B%2520i%253C%252024%253B%2520i%252B%252B%29%257B%250A%2520%2520%2520%2520while%28digitalRead%28bpTab%255Bi%255D%29%2520%253D%253D%2520LOW%29%257B%250A%2520%2520%2520%2520%252F%252Ftone%28%29%2520permet%2520d%27envoyer%2520un%2520signal%2520carr%25C3%25A9%2520dans%2520une%2520sortie%2520donn%25C3%25A9e%250A%2520%2520%2520%2520tone%28buzzer%252C%2520musicNote%255Bi%255D*5%29%253B%250A%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520noTone%28buzzer%29%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%257D"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
+    <iframe class="zebi"
+        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252Fon%2520cr%25C3%25A9e%2520un%2520tableau%2520avec%2520dedans%2520des%2520valeurs%2520d%25C3%25A9finies%2520qui%2520correspondent%2520aux%2520notes%2520exactes%2520%28do%252C%2520re%252C%2520etc...%29%250A%250Afloat%2520musicNote%255B24%255D%2520%253D%257B32.70%252C34.65%252C36.71%252C38.89%252C41.20%252C43.65%252C46.25%252C49%252C51.91%252C55%252C58.27%252C61.74%252C32.70*2%252C34.65*2%252C36.71*2%252C38.89*2%252C41.20*2%252C43.65*2%252C46.25*2%252C49*2%252C51.91*2%252C55*2%252C58.27*2%252C61.74*2%257D%253B%250A%250A%252F%252Fon%2520d%25C3%25A9finie%2520une%2520variable%2520pour%2520chaque%2520touche%2520et%2520on%2520lui%2520associe%2520une%2520valeur%2520de%2520pin%2520de%2520l%27arduino%250A%2523define%2520bpDo%252023%250A%2523define%2520bpRe%252027%250A%2523define%2520bpMi%252031%250A%2523define%2520bpFa%252033%250A%2523define%2520bpSol%252037%250A%2523define%2520bpLa%252041%250A%2523define%2520bpSi%252045%250A%2523define%2520bpDod%252025%250A%2523define%2520bpRed%252029%250A%2523define%2520bpFad%252035%250A%2523define%2520bpSold%252039%250A%2523define%2520bpLad%252043%250A%2523define%2520bpDo2%252022%250A%2523define%2520bpRe2%252026%250A%2523define%2520bpMi2%252030%250A%2523define%2520bpFa2%252032%250A%2523define%2520bpSol2%252036%250A%2523define%2520bpLa2%252040%250A%2523define%2520bpSi2%252044%250A%2523define%2520bpDod2%252024%250A%2523define%2520bpRed2%252028%250A%2523define%2520bpFad2%252034%250A%2523define%2520bpSold2%252038%250A%2523define%2520bpLad2%252042%250A%2523define%2520buzzer%25204%250A%2520%250A%252F%252F%2520on%2520cr%25C3%25A9e%2520un%2520tableau%2520et%2520on%2520y%2520rentre%2520toutes%2520les%2520valeurs%250A%250Aint%2520bpTab%255B24%255D%253D%257BbpDo%252CbpDod%252CbpRe%252CbpRed%252CbpMi%252CbpFa%252CbpFad%252CbpSol%252CbpSold%252CbpLa%252CbpLad%252CbpSi%252CbpDo2%252CbpDod2%252CbpRe2%252CbpRed2%252CbpMi2%252CbpFa2%252CbpFad2%252CbpSol2%252CbpSold2%252CbpLa2%252CbpLad2%252CbpSi2%257D%253B%250Avoid%2520setup%28%29%250A%257B%250A%2520%2520%252F%252Fpour%2520chacune%2520des%2520valeurs%2520du%2520tableau%2520%28notes%29%2520%25C3%25A7a%2520va%2520appeler%2520la%2520sortie%2520de%2520l%27arduino%2520en%2520question%250A%2520%2520for%28int%2520i%2520%253D%25200%253B%2520i%253C%252024%253B%2520i%252B%252B%29%257B%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520pinMode%28bpTab%255Bi%255D%252C%2520INPUT%29%253B%250A%2520%2520%257D%250A%2520%2520%2520%2520pinMode%28buzzer%252C%2520OUTPUT%29%253B%250A%2520%2520%2520%2520Serial.begin%289600%29%253B%250A%257D%250A%2520%250Avoid%2520loop%28%29%250A%257B%250A%2520%2520%252F%252Fappelle%2520la%2520sortie%2520de%2520l%27arduino%2520si%2520la%2520note%2520est%2520enfonc%25C3%25A9e%2520%28ce%2520qui%2520produira%2520le%2520son%29%250A%2520%2520for%28int%2520i%2520%253D%25200%253B%2520i%253C%252024%253B%2520i%252B%252B%29%257B%250A%2520%2520%2520%2520while%28digitalRead%28bpTab%255Bi%255D%29%2520%253D%253D%2520LOW%29%257B%250A%2520%2520%2520%2520%252F%252Ftone%28%29%2520permet%2520d%27envoyer%2520un%2520signal%2520carr%25C3%25A9%2520dans%2520une%2520sortie%2520donn%25C3%25A9e%250A%2520%2520%2520%2520tone%28buzzer%252C%2520musicNote%255Bi%255D*5%29%253B%250A%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520noTone%28buzzer%29%253B%250A%2520%2520%257D%250A%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%257D"
+        sandbox="allow-scripts allow-same-origin">
+    </iframe>
 
 
-            <footer class="site-footer">
-                <div class="container">
-                    <div class="txt">
-                        <p class="copyright-text">&copy; 2021 by
-                            <a href="#">Paul Herbeau</a>.
-                        </p>
-                    </div>
-        
-                    <div class="icons">
-                        <ul class="social-icons">
-                            <li><a class="github" href="https://github.com/Paulrbo"><i class="fab fa-github-alt" target="_blank"></i></a></li>
-                            <li><a class="linkedin" href="https://www.linkedin.com/in/paul-herbeau-a66420116/" target="_blank"><i
-                                        class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="txt">
+                <p class="copyright-text">&copy; 2021 by
+                    <a href="#">Paul Herbeau</a>.
+                </p>
+            </div>
+
+            <div class="icons">
+                <ul class="social-icons">
+                    <li><a class="github" href="https://github.com/Paulrbo"><i class="fab fa-github-alt"
+                                target="_blank"></i></a></li>
+                    <li><a class="linkedin" href="https://www.linkedin.com/in/paul-herbeau-a66420116/"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 
